@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGIV - Sistema de Inventario y Ventas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>SIGIV - Sistema de Gestión para Inventario y Ventas</h1>
+
+    <section id="product-section">
+        <h2>Registrar Producto</h2>
+        <input type="text" id="product-name" placeholder="Nombre del producto">
+        <input type="number" id="product-stock" placeholder="Cantidad">
+        <button onclick="addProduct()">Agregar Producto</button>
+    </section>
+
+    <section id="product-list-section">
+        <h2>Lista de Productos</h2>
+        <ul id="product-list"></ul>
+    </section>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
